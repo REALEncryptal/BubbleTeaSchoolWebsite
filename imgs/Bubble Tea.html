@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/order.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Tea</title>
+    <link rel="stylesheet" href="./Bubble Tea_files/order.css">
+</head>
+<body>
+    <div class="sections">
+        <div class="navbar width" id="top">
+            <h1>BUBBLE TEA</h1>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#menu">MENU</a></li>
+                <li><a href="http://127.0.0.1:5500/about.html" id="selected">ABOUT</a></li>
+            </ul>
+        </div>
+
+        <a href="http://127.0.0.1:5500/index.html#menu" class="goback">
+            <img src="./Bubble Tea_files/iconmonstr-caret-left-filled.svg" alt="">
+            <h2>Back</h2>
+        </a>
+
+        <div class="buycontain">
+            <div class="buy">
+                <img src="./Bubble Tea_files/brown.png" alt="">
+                <div class="buyright">
+                    <h1>Order Summary</h1>
+                    <hr>
+                    <table>
+                        <tbody><tr>
+                            <th>123213123</th>
+                            <td>fawfafw</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+        </div>
+       
+        
+        <div class="footer width">
+            <p>Made by Alex</p>
+        </div>
+    </div>
+
+    <script src="./Bubble Tea_files/script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

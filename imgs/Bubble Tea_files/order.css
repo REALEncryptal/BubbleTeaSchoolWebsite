@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sections.width {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 50px;
+}
+
+.navbar h1 {
+    font-weight: lighter;
+    color: #be7f6b;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    font-weight: 100;
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+}
+
+#selected {
+    color: #d29e85;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.order {
+    height: 600px;
+    background-color: #e9e9e9;
+    display: flex;
+    flex-direction: column;
+}
+
+.goback {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 30px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    transition: .2s;
+}
+
+.goback:hover{
+    transition: .2s;
+    margin-left: 10px;
+}
+
+.goback:hover img{
+    transition: .2s;
+    margin-right: 3px;
+}
+
+.goback img {
+    width: 50px;
+}
+
+
+.buycontain {
+    background-color: #ececec;
+    width: 100%;
+    height: 700px;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bill {
+    background-color: #d29e85;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
